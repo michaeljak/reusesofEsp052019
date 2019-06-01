@@ -12,8 +12,8 @@ package br.com.alfa.michael.strategy;
 public class PlanoPremium implements NumeroTransmicoes{
 
     @Override
-    public double PreparadorAmbienteTranmicao(Assinatura Preco) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String PreparadorAmbienteTranmicao(String Plano) {
+     return Plano;
     }
 
    

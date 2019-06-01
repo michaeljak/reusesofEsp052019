@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.alfa.michael.strategy;
+package bc.com.alfa.michael.professor.strategy;
 
 /**
  *
  * @author Aluno
  */
-public class PlanoBasico implements NumeroTransmicoes{
-
-    @Override
-    public String PreparadorAmbienteTranmicao(String Plano) {
-     return Plano;
-    }
+public class PrecoBasico implements IPreco{
 
     
+    public double getPreco() {
+       return 21.9;
+    }
+
 }

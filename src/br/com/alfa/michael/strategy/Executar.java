@@ -5,18 +5,27 @@
  */
 package br.com.alfa.michael.strategy;
 
-/**
- *
- * @author Aluno
- */
+import javax.swing.JOptionPane;
+
+
 public class Executar {
-    public static void main(String[] args) {
-		Assinatura basico = new Assinatura(Assinatura.PLANO_BASICO,29);
-                
-		System.out.println(basico.AmbienteTranmicao());
+   public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Assinatura plano;
+		String[] planos = {"PLANO BASICO","PLANO PADRAO","PLANO PREMIUM"};
 		
-		Assinatura padrao = new Assinatura(Assinatura.PLANO_PADRAO,
-				1700);
-		System.out.println(padrao.AmbienteTranmicao());
+		plano = new Assinatura(new PlanoBasico());
+		JOptionPane.showMessageDialog(null,"Plano: " + plano.excuteTransmicoes(planos[0]));
+		
+		plano = new Assinatura(new PlanoPadrao());
+		JOptionPane.showMessageDialog(null,"Plano: " + plano.excuteTransmicoes(planos[1]));
+		
+		plano = new Assinatura(new PlanoPremium());
+		JOptionPane.showMessageDialog(null,"Plano: " + plano.excuteTransmicoes(planos[2]));
+		
+		
+				
+	
 	}
 }
