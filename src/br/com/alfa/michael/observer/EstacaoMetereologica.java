@@ -8,6 +8,7 @@ package br.com.alfa.michael.observer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  *
@@ -36,9 +37,9 @@ public class EstacaoMetereologica {
     
     public void atualizar(){
         Random random = new Random();
-        this.temperatura = random.nextDouble()*50;
-        this.umidade = random.nextDouble()*100;
-        this.pressaoBarometrica = random.nextDouble()*20;
+        this.temperatura = ThreadLocalRandom.current().nextInt(10,25);
+        this.umidade = ThreadLocalRandom.current().nextInt(10,25);
+        this.pressaoBarometrica = ThreadLocalRandom.current().nextInt(10,25);
         atualizarObservadores();        
     }
 }
