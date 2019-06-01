@@ -5,10 +5,7 @@
  */
 package br.com.alfa.michael.factoryMethod;
 
-/**
- *
- * @author Aluno
- */
+
 public class Factore implements IFactory{
 
    

@@ -4,10 +4,7 @@ package br.com.alfa.michael.factoryMethod;
 import javax.swing.JOptionPane;
 import jdk.nashorn.internal.runtime.regexp.JoniRegExp;
 
-/**
- *
- * @author Aluno
- */
+
 public class Excutar {
     
     
